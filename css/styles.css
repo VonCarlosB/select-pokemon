@@ -1,1 +1,84 @@
+body{
+    background-color: lightgoldenrodyellow;
+    font-family: Verdana;
+}
 
+h1{
+    text-align: center;
+}
+
+.border{
+    border: 4px solid gold;
+    border-radius: 10px;
+}
+
+.pokemon-form{
+    max-width: 350px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 10px 0 10px 0;
+}
+
+select{
+    background-color: lightblue;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button{
+    width: 100px;
+    background-color: lightgreen;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#display{
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.section{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.section img{
+    background-color: white;
+}
+
+.stats{
+    width: 96%;
+    margin: auto;
+}
+
+.table{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.table p{
+    width: 15%;
+    min-width: 100px;
+    height: 40px;
+    margin: 0;
+    text-align: center;
+    align-content: center;
+    border: 5px solid gold;
+    font-size: 14px;
+}
+
+b{
+    text-decoration: underline;
+}
+
+.table p:hover{
+    background-color: darkgoldenrod;
+    color: white;
+}
