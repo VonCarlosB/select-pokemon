@@ -38,13 +38,14 @@ button{
     width: 70%;
     margin: auto;
     margin-top: 20px;
+    padding: 20px;
 }
 
 .section{
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .section img{
@@ -78,7 +79,6 @@ b{
     text-decoration: underline;
 }
 
-.table p:hover{
-    background-color: darkgoldenrod;
-    color: white;
+.table p::first-letter{
+    text-transform: capitalize;
 }
