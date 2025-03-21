@@ -22,6 +22,7 @@ document.getElementById('get-pokemon').addEventListener('click', () => {
             ${showImage(data.sprites.other["official-artwork"].front_default)}
             ${showImage(data.sprites.other["official-artwork"].front_shiny)}
         </div>
+        <audio src="${data.cries.latest}" type="audio/ogg" autoplay></audio>
         <div class="tables">
             <div class="stats">
                 <h4>Stats: </h4>
@@ -72,7 +73,7 @@ fetchOptions('https://pokeapi.co/api/v2/pokemon')
 function fetchOptions(url) {
     fetch(url).then((response) => {
         if(!response.ok){
-            console.error('Ha habido un problema con la obtención de la lista de pokemon')
+            console.error('Ha habido un problema con la obtención de la lista de pokemon '+url)
         }
         return response.json()
     }).then((data) => {
